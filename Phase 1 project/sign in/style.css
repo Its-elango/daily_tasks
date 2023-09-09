@@ -1,0 +1,90 @@
+html
+{
+background-image: url("back.jpg");
+font-family:verdana;
+background-size: cover;
+}
+
+ul {
+  font-family:verdana;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
+ li {
+   float: left;
+ }
+ nav ul
+ {
+ marign-top:-50px;
+ }
+ 
+ li a {
+  margin-left: 100px;
+   display: block;
+   text-align: center;
+   padding: 14px 15px;
+   text-decoration: none;
+   font-size: large;
+color:black;
+font-weight: bold;
+font-family: verdana;
+ }
+ 
+ li a:hover {
+   background-color: #111;
+ color:white;
+ }
+fieldset
+{
+margin:0px 500px 0px 500px;
+border-radius:50px;
+border:2px solid;
+box-shadow: 20px 20px 10px grey;
+}
+h2
+{
+text-transform:captilaize;
+text-shadow: 2px 2px 5px red;
+}
+center
+{
+margin-top:50px;
+}
+::placeholder {
+  padding:10px;
+}
+input[type=email]
+{
+width:200px;
+height:30px;
+border-radius:50px;
+}
+input[type=submit]
+{
+background:linear-gradient(to right,white,gray);
+}
+input[type=password]
+{
+width:200px;
+height:30px;
+border-radius:50px;
+}
+input[type=submit]
+{
+width:200px;
+border-radius:50px;
+height:30px;
+}
+a
+{
+text-decoration:none;
+}
+footer
+{
+color:black;
+font-size:20px;
+text-align:center;
+line-height: 2;
+}

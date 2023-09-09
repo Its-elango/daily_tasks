@@ -1,0 +1,106 @@
+h1
+{
+margin-left: 200px;
+text-transform:captilaize;
+text-shadow: 2px 2px 5px white;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-image:url(regback.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ 
+ul {
+  font-family:verdana;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
+ li {
+   float: left;
+ }
+ nav ul
+ {
+ marign-top:-50px;
+ }
+ 
+ li a {
+  margin-left: 100px;
+  display: block;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: large;
+color:black;
+font-weight: bold;
+font-family: verdana;
+ }
+ 
+ li a:hover {
+   background-color: #111;
+ color:white;
+ }
+ 
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /* Add padding to containers */
+ .container {
+   padding: 16px;
+
+ }
+
+ 
+ /* Full-width input fields */
+ input[type=text], input[type=password],select,input[type=date],input[type=number] {
+   width: 50%;
+   padding: 15px;
+   margin: 5px 0 10px 0;
+   display:block;
+   border: none;
+   background: #f1f1f1;
+ }
+ 
+ input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+ 
+ /* Overwrite default styles of hr */
+ hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+ }
+ 
+ /* Set a style for the submit button */
+ .registerbtn {
+   
+   color:black;
+   padding: 16px 20px;
+   border-radius:10px;
+   width: 200px;
+   opacity: 0.9;
+   margin-left:200px;
+   margin-top: 10px;
+ }
+ 
+ .registerbtn:hover {
+   opacity: 1;
+ }
+ 
+ footer
+{
+color:black;
+font-size:20px;
+text-align:center;
+line-height: 2;
+}
+ 
+img {
+ float:right;
+}
+
+
