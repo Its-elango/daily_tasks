@@ -1,0 +1,93 @@
+/* Style the body */
+body {
+  background-image: url("regback.jpg");
+  background-repeat: inherit;
+  background-size: cover;
+  color: black;
+  font-family: verdana;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Style the logo */
+.logo img {
+  width: auto;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  height: 60px;
+}
+
+nav ul li {
+  margin-right: 20px;
+  /* Adjust the spacing between menu items */
+  margin-top: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 50px;
+  /* Remove margin from the last menu item */
+}
+
+/* Style the navigation links */
+nav ul li a {
+  font-size: large;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff;
+  /* Text color for the links */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: black;
+  /* Text color on hover */
+}
+
+/* Style the header */
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px blue;
+}
+
+/* Style the main content */
+.main ,.down {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* Style the main photo */
+.photo {
+  height: 500px;
+  width: 1000px;
+  margin-left: 150px;
+}
+
+/* Style the footer */
+footer {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+hr {
+  margin: 10px;
+}

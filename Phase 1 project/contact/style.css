@@ -1,0 +1,154 @@
+/* Style the body */
+body
+{
+  background-image: url("regback.jpg");
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* Text color for the header */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style the logo */
+.logo img {
+  width: auto; 
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  height: 60px;
+}
+
+nav ul li {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+  margin-top: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 50px; /* Remove margin from the last menu item */
+}
+
+/* Style the navigation links */
+nav ul li a {
+  font-size:large;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff; /* Text color for the links */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color:black; /* Text color on hover */
+}
+
+/* Style the heading */
+h1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size:50px;
+  text-shadow: 2px 2px 5px blue;
+}
+.right
+{
+  width:500px;
+}
+.left
+{
+  float:right;
+  margin-right:200px;
+  margin-top:-430px;
+}
+/* Style the contact form */
+fieldset legend
+{
+  font-family:verdana;
+  font-size:20px;
+  color:black;
+}
+
+/* Style input fields */
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea
+{
+  font-family:verdana;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  font-family:verdana;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius:50px;
+}
+
+/* Style the footer */
+footer
+{
+  color: black;
+  font-size:20px;
+  text-align:center;
+}
+
+hr
+{
+  margin:10px;
+}
+
+/* Style the google map */
+.mapouter
+{
+  position:relative;
+  text-align:right;
+  width:100%;
+  height:300px;
+}
+.gmap
+ {
+  overflow:hidden;
+  background:none!important;
+  width:100%;
+  height:300px;
+}
+
+.gmap_iframe
+{
+  height:300px !important;
+}
+
+.down
+{
+  margin:10px;
+  font-family:verdana;
+  font-weight: bold;
+  line-height: 2;
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+/* Style the error message */
+#nameError,#emailError,
+#phoneError,#messageError
+{
+  color:red;
+  font-size: small;
+}

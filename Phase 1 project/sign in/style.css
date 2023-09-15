@@ -1,0 +1,110 @@
+/* Style the for the html */    
+html
+{
+  background-image: url("regback.jpg");
+  font-family:verdana;
+  color:white;
+}
+
+/* Style the header section*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* Text color for the header */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style the logo */
+.logo img {
+  width: auto; 
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  height: 60px;
+}
+
+/* Style the navbar links */
+nav ul li {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+  margin-top: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 50px; /* Remove margin from the last menu item */
+}
+
+/* Style the navigation links */
+nav ul li a {
+  font-size:large;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff; /* Text color for the links */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color:black; /* Text color on hover */
+}
+
+/* Style the form fieldset */
+fieldset
+{
+  margin:0px 500px 0px 500px;
+  border-radius:50px;
+  border:2px solid;
+  box-shadow: 20px 20px 10px blue;
+}
+
+h2
+{
+  text-transform:captilaize;
+  text-shadow: 2px 2px 5px blue;
+}
+
+/* Positiong form */
+center
+{
+  margin-top:50px;
+}
+
+/* Style the placeholder */
+::placeholder {
+  padding:10px;
+}
+
+/* Style the inputfields */
+input[type=email],input[type=password]
+{
+  width:200px;
+  height:30px;
+  border-radius:50px;
+}
+
+/* Style the submit button */
+input[type=submit]
+{
+  width:200px;
+  border-radius:50px;
+  height:30px;
+  background:linear-gradient(to right,lightblue,blue);
+}
+
+/* Style the footer */
+footer
+{
+  font-size:20px;
+  text-align:center;
+  line-height: 2;
+}
+
+/* Style the error message */
+#emailError,#passwordError
+{
+  color:red;
+  font-size: small;
+}

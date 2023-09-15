@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Sign up</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-----------------------Social media icon link-------------------------->
+   <script src="https://kit.fontawesome.com/ce19876732.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <!-----------------------Navbar section-------------------------->
+   <header>
+      <div class="logo">
+          <img src="logo.png" alt="Logo">
+      </div>
+      <nav>
+          <ul>
+              <li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/website/wedsite.html">Home</a></li>
+              <li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/sign%20in/sign%20in.html">Sign in</a></li>
+              <li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/sign%20up/sign%20up.html">Sign up</a></li>
+              <li><a href="file:///C:/Users/Admin/Desktop/Phase%201%20project/contact/contact.html">Contact us</a></li>
+              <li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/about/about.html">About us</a></li>
+          </ul>
+      </nav>
+  </header>
+            <!-----------------------End of navbar section-------------------------->
+       <hr>
+            <!-----------------------Sign up form section-------------------------->
+      <form name="myform" onsubmit="return validateform()">
+         <div class="container">
+            <h1>Sign up</h1>
+            
+               <div class="side">
+                  <label for="email"><b>Email</b></label><br/>
+                  <input type="text" name="email" id="email" placeholder="Enter your email..." 
+                  onfocusout="validateEmail()">
+                  <span id="emailError"></span><br/>
+
+                  <label for="address"><b>Address</b></label><br/>
+                  <input type="text" name="address" id="address" placeholder="Enter your address..." 
+                  onfocusout="validateAddress()">
+                  <span id="addressError"></span><br/>
+
+                  <label for="state"><b>State</b></label>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                  &nbsp;&nbsp; &nbsp; &nbsp; <label for="city"><b>City</b></label><br/>
+
+                  <select name="state" id="state" onchange="choose(this.id,'city')" onfocusout="validatestate()">
+                     <option value="">--Choose state--</option>
+                     <option value="tn">Tamilnadu</option>
+                     <option value="kl">Kerala</option>
+                  </select>
+
+                  <select name="city" id="city">
+                     <option value="">--Choose city--</option>
+                  </select>
+                  <br/>
+                  <span id="stateError"></span><br/>
+
+                  <label for="uname"><b>User name</b></label>
+                  <input type="text" name="uname" id="uname" placeholder="Enter your username..."
+                   onfocusout="validateUname()">
+                  <span id="unameError"> </span><br/>
+
+                  <label for="pwd"><b>Password</b></label><br/>
+                  <input type="password" name="pwd" id="pwd" placeholder="Enter your password..." 
+                  onfocusout="validatePassword()">
+                  <span id="pwdError"></span><br/>
+
+                  <label for="cpwd"><b>Confirm password</b></label>
+                  <input type="password" name="cpwd" id="cpwd" placeholder="Retype your password..." 
+                  onfocusout="validateCpassword()">
+                  <span id="cpwdError"></span>
+               </div>
+
+               <div class="main">
+
+                  <label for="fname"><b>First name</b></label>
+                  <input type="text" name="fname" id="fname" placeholder="Enter your first name..." 
+                  onfocusout="validateFname()">
+                  <span id="fnameError"></span><br/>
+
+                  <label for="lname"><b>Last name</b></label>
+                  <input type="text" name="lname" id="lname" placeholder="Enter your last name..." 
+                  onfocusout="validateLname()">
+                  <span id="lnameError"></span><br/>
+
+                  <label for="dob"><b>Date of birth</b></label><br/>
+                  <input type="date" name="dob" id="dob"  onchange="validatedob(this)" onfocusout="validatedate()">
+                  <span id="dobError"></span><br/>
+
+                  <label for="age"><b>Age</b></label>
+                  <input type="text" name="age" id="age">
+
+                  <label for="gender"><b>Gender</b></label>&nbsp;&nbsp;&nbsp;
+                  <input type="radio" id="gender" name="gender">
+                  <label for="Male"><b>Male</b></label>&nbsp;&nbsp;&nbsp;
+                  <input type="radio" id="gender" name="gender">
+                  <label for="fenmale"><b>Female</b></label>&nbsp;&nbsp;&nbsp;
+                  <input type="radio" id="gender" name="gender">
+                  <label for="other"><b>Others</b></label>
+                  <br/>
+                  <br/><br/>
+
+                  <label for="phone"><b>Phone number</b></label><br/>
+                  <input type="tel" name="phone" id="phone" placeholder="Enter your phone number..." 
+                  maxlength="10" onfocusout="validatePhone()">
+                  <span id="phoneError"></span><br/>
+               </div>
+
+               <button type="submit" class="registerbtn">Sign up</button>
+               <h3 style="text-align: center;" >Already member ?
+                  <a class="link" href="file:///C:/Users/Admin/Desktop/Phase%201%20project/sign%20in/sign%20in.html">
+                   Sign in
+                  </a>
+               </h3>
+         </div>
+      </form>
+             <!-----------------------End of sign up form section-------------------------->
+
+              <!-------------------------------Footer section----------------------------->
+   <hr class="bottomhr">
+      <footer>
+         <div class="foot">
+            <p> &copy Copyrights reserved 2023<br/>
+               xyz street,state,country<br/>Follows us
+               <i class='fab fa-linkedin' style='font-size:24px'></i>
+               <i class='fab fa-facebook' style='font-size:24px'></i>
+               <i class='fab fa-instagram' style='font-size:24px'></i>
+               <i class='fab fa-youtube' style='font-size:24px'></i>
+               <i class='fab fa-twitter' style='font-size:24px'></i>
+            </p>
+         </div>
+      </footer>
+             <!-----------------------------End of footer section----------------------------->
+
+              <!-------------------------Linking external js file----------------------------->
+<script src="script.js"></script>
+
+</body>
+
+</html>

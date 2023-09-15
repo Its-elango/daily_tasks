@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<head>
+<title>Sign in</title>
+							<!---------------Linking style sheet------------------------>
+<link rel="stylesheet" href="style.css">
+
+							<!---------------Linking social media icons----------------->
+<script src="https://kit.fontawesome.com/ce19876732.js" crossorigin="anonymous"></script>
+</head>
+<body>
+							<!----------------------Navbar section---------------------->
+	<header>
+		<div class="logo">
+			<img src="logo.png" alt="Logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/website/wedsite.html">Home</a></li>
+				<li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/sign%20in/sign%20in.html">Sign in</a></li>
+				<li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/sign%20up/sign%20up.html">Sign up</a></li>
+				<li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/sign%20up/sign%20up.html">Contact us</a></li>
+				<li><a href="file:///C:/Users/admin/Desktop/Phase%201%20project/about/about.html">About us</a></li>
+			</ul>
+		</nav>
+	</header>
+						   <!---------------------End of navbar section--------------------->
+	<hr />
+						   <!-----------------------Form section---------------------------->
+	<center>
+		<fieldset>
+			<h2>Sign in</h2>
+				<hr />
+					<form method="post" name="form" onsubmit="return validateform()" method="post">
+	 					<input type="email" id="email" name="email" placeholder="Email" onfocusout="validateEmail()">
+						<br />
+	 					<span id="emailError"></span>
+	 					<br />
+
+  						<input type="password" id="pwd" name="pwd" placeholder="Password" onfocusout="validatePassword()">
+						<br >
+	  					<span id="passwordError"></span>
+						<br  />
+
+						<input type="checkbox">Remember me 
+						<a href="url">Forgot password?</a> <br /><br />
+
+	 					<input type="submit" value="Sign in"><br /><br />
+						Not a member ? 
+
+						<a href="file:///C:/Users/admin/Desktop/Phase%201%20project/sign%20up/sign%20up.html">
+						Sign up now
+						</a>
+					</form>
+		</fieldset>
+	</center>
+							<!----------------------End of form section---------------------->
+	<hr style="margin-top:100px" />
+
+							<!----------------------Footer section--------------------------->
+	<footer>
+		<div class="foot">
+			<p> &copy Copyrights reserved 2023<br/>
+				xyz street,state,country<br/>Follows us
+
+			<i class='fab fa-linkedin' style='font-size:24px'></i>
+			<i class='fab fa-facebook' style='font-size:24px'></i>
+			<i class='fab fa-instagram' style='font-size:24px'></i>
+			<i class='fab fa-youtube' style='font-size:24px'></i>
+			<i class='fab fa-twitter' style='font-size:24px'></i>
+			</p>
+		</div>
+	</footer>
+						<!----------------------End of footer section---------------------->
+
+						<!----------------------Javascript linking ------------------------>
+<script src="signin.js"></script>
+</body>
+</html>

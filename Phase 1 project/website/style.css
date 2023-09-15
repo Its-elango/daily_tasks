@@ -1,0 +1,80 @@
+*
+{
+font-family:verdana;
+color:white;
+}
+/* Style the body */
+body
+{
+background-image:url("img/regback.jpg");
+background-size:cover;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* Text color for the header */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Style the logo */
+.logo img {
+  width: auto; /* Ensure the logo scales proportionally */
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  height: 60px;
+}
+
+/* Style the navigation menu items */
+nav ul li {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+  margin-top: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 50px; /* Remove margin from the last menu item */
+}
+
+/* Style the navigation links */
+nav ul li a {
+  font-size:large;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff; /* Text color for the links */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+/* Style the links for hover */
+nav ul li a:hover {
+  color:black; /* Text color on hover */
+}
+hr
+{
+margin:10px;
+}
+
+/* Style the footer*/
+footer
+{
+color:black;
+font-size:20px;
+text-align:center;
+}
+
+
+/* Style the main content */
+.para
+{
+ line-height:1.8;
+ text-align: justify;
+}
+
+
